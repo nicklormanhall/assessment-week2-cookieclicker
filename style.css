@@ -1,0 +1,62 @@
+* {
+  font-family: Copperplate, Papyrus, fantasy;
+  color: black;
+}
+
+body {
+  margin: 0%;
+}
+
+.monster {
+  height: 100vh;
+  background-image: url("./assets/CookieMonster6.jpg");
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 50px;
+  margin: 0;
+}
+
+h2 {
+  /* margin: 5%; */
+  margin-left: 5%;
+  width: 20%;
+}
+
+#cookieBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#cookieBtn img {
+  border: none;
+}
+
+.cookieSelector {
+  display: flex;
+  justify-content: space-evenly;
+}
+.store {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* #cookieBtn {
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  left: -128px;
+  top: -128px;
+  cursor: pointer;
+  z-index: 10000;
+  border-radius: 128px;
+  border: none;
+  overflow: hidden;
+  outline: none;
+} */
