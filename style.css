@@ -5,12 +5,13 @@
 
 body {
   margin: 0%;
+  background-size: cover;
 }
 
 .monster {
   height: 100vh;
   background-image: url("./assets/CookieMonster6.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -18,12 +19,15 @@ h1 {
   padding: 10px;
   font-size: 50px;
   margin: 0;
+  /* position: absolute; */
+  /* z-index: 1; */
 }
 
 h2 {
   /* margin: 5%; */
   margin-left: 5%;
   width: 20%;
+  position: absolute;
 }
 
 #cookieBtn {
@@ -31,32 +35,58 @@ h2 {
   border: none;
   padding: 0;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 #cookieBtn img {
   border: none;
+  height: 50%;
+}
+
+#cookieBtn img:hover {
+  transform: scale(1.1);
 }
 
 .cookieSelector {
   display: flex;
   justify-content: space-evenly;
+  height: 50vh;
 }
+
 .store {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  margin-left: 40%;
+  /* border-style:solid;
+  margin-top: 100px;
+  margin-bottom: 100px */
 }
 
-/* #cookieBtn {
-  width: 256px;
-  height: 256px;
-  position: absolute;
-  left: -128px;
-  top: -128px;
+.store button {
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 180px;
   cursor: pointer;
-  z-index: 10000;
-  border-radius: 128px;
-  border: none;
-  overflow: hidden;
-  outline: none;
-} */
+  color: green;
+}
+.store h3 {
+  color: white;
+}
+
+.counts {
+  background-color: black;
+  text-align: center;
+}
+
+.counts p {
+  color: white;
+  font-size: larger;
+}
+.counts span {
+  color: white;
+  font-size: 50px;
+}
