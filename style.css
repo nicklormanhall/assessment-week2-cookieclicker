@@ -77,6 +77,10 @@ h2 {
   color: white;
 }
 
+#resetBtn {
+  background-color: red;
+}
+
 .counts {
   background-color: black;
   text-align: center;
@@ -88,5 +92,10 @@ h2 {
 }
 .counts span {
   color: green;
+  font-size: 50px;
+}
+#errorMessage {
+  text-align: center;
+  color: red;
   font-size: 50px;
 }
