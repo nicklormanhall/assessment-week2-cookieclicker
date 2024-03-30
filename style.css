@@ -50,7 +50,7 @@ h2 {
 .cookieSelector {
   display: flex;
   justify-content: space-evenly;
-  height: 50vh;
+  height: 70vh;
 }
 
 .store {
@@ -82,18 +82,23 @@ h2 {
 }
 
 .counts {
+  display: flex;
+  justify-content: space-around;
   background-color: black;
   text-align: center;
+  align-items: center;
 }
 
 .counts p {
   color: white;
   font-size: larger;
 }
+
 .counts span {
   color: green;
   font-size: 50px;
 }
+
 #errorMessage {
   text-align: center;
   color: red;
