@@ -9,15 +9,37 @@ const whiskBtn = document.getElementById("whiskBtn");
 const pressBtn = document.getElementById("pressBtn");
 const factoryBtn = document.getElementById("factoryBtn");
 
+const upgradeItems = [
+  { cost: 10, cps: 1, item: "new mixer" },
+  { cost: 100, cps: 10, item: "bigger oven" },
+  { cost: 1000, cps: 100, item: "new baking tools" },
+  { cost: 10000, cps: 1000, item: "cookie press" },
+  { cost: 100000, cps: 10000, item: "cookie factory" },
+];
+
+// console.log(upgradeItems[0]);
+
 const cookiesSpan = document.getElementById("cookiesSpan");
 const cookiesPerSecondSpan = document.getElementById("cookiesPerSecondSpan");
 
 cookieBtn.addEventListener("click", buyCookie);
-mixerBtn.addEventListener("click", buyMixer);
-// ovenBtn.addEventListener("click", buyOven);
-// whiskBtn.addEventListener("click", buyWhisk);
-// pressBtn.addEventListener("click", byPress);
-// factoryBtn.addEventListener("click", buyFactory);
+
+//upgrade
+mixerBtn.addEventListener("click", function () {
+  buyUpgrade(upgradeItems[0].cost, upgradeItems[0].cps);
+});
+ovenBtn.addEventListener("click", function () {
+  buyUpgrade(upgradeItems[1].cost, upgradeItems[1].cps);
+});
+whiskBtn.addEventListener("click", function () {
+  buyUpgrade(upgradeItems[2].cost, upgradeItems[2].cps);
+});
+pressBtn.addEventListener("click", function () {
+  buyUpgrade(upgradeItems[3].cost, upgradeItems[3].cps);
+});
+factoryBtn.addEventListener("click", function () {
+  buyUpgrade(upgradeItems[4].cost, upgradeItems[4].cps);
+});
 
 // Step 1: Sets the default values of 0
 const pageData = {
@@ -49,9 +71,19 @@ function updateStorage() {
   localStorage.setItem("pageData", JSON.stringify(pageData));
 }
 
-function buyMixer() {
-  pageData.cookiesPerSecond++;
-  pageData.cookieCount -= 100; //cost of mixer is 100
+function buyUpgrade(cost, cps) {
+  pageData.cookiesPerSecond += cps;
+  pageData.cookieCount -= cost;
   updatePage();
   updateStorage();
 }
+
+function enableButtons() {}
+
+setInterval(function () {
+  pageData.cookieCount += pageData.cookiesPerSecond;
+  updatePage();
+  updateStorage();
+  enableButtons();
+  //   console.log(setInterval);
+}, 1000);
