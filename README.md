@@ -10,7 +10,7 @@ I made some intial design and layout sketches, using figma so allow me to make a
 
 31/03/2024 - submission details - Notes added to moodle and READ.md
 
-I believe I have met all the requirements and goals listed for the assignment.
+I believe I have met the required goals and the stretch goals listed for the assignment.
 
 There weren't any goals that I didn't achieve.
 
@@ -36,9 +36,11 @@ DONE: Use the owned items and their increment bonus to calculate the total incre
 
 I wasn't sure fully what this meant, I assumed it was regarding updating the cookies per second.
 
-I found as I worked through building the assignment I came up with new ideas of how I wanted to handle to cookie clicker, for example I initially started with 1 fucntion for each upgrade I decided to see if and how I could use an array to store the cookie values and descriptions etc. With more time I would have looked to use this array in other fuctions.
+I found as I worked through the assignment I came up with new ideas of how I wanted to handle to cookie clicker, for example I initially started with 1 fucntion for each upgrade I decided to see if and how I could use an array to store the cookie values and descriptions etc. With more time I would have looked to use this array in other fuctions.
 
 https://nicklormanhall.github.io/assessment-week2-cookieclicker/ (live)
 https://github.com/nicklormanhall/assessment-week2-cookieclicker (github repo)
 
-The still had challenges with the Live server changes not always being reflected on the localhost, but I was more confident of the changes I had made and meant I saved again
+The still had challenges with the Live server changes not always being reflected on the localhost, but I was more confident of the changes I had made were correct and meant I saved again.
+
+With the assignment working correctly I decided to freeze my changes for the submission, however I wanted to carry on making additional changes to the "upgrade" process so I made a new branch called newupgrade and start making further changes to that branch.
