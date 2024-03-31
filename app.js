@@ -81,7 +81,6 @@ function buyUpgrade(cost, cps) {
 }
 
 //enables and disables the upgrade purchases if there aren't enough cookies
-// need to look at this as this is not fully working and need to
 function enableButtons() {
   if (pageData.cookieCount < 10) {
     mixerBtn.disabled = true;
