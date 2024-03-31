@@ -4,7 +4,7 @@ We're going to build a simple interactive game to include on the website as a fu
 
 It's known as an "idling game" or "incremental game": You run a cookie shop. Every second you produce some number of cookies. Clicking the master cookie gets you you more cookies, too. You can spend your cookies on upgrades to your Cookie factory to increase the number of cookies you have per click.
 
-I made some intial design and layout sketches, using figma so allow me to make a basic plan on what I wanted each sheet to include.
+I made some initial design and layout sketches, using figma so allow me to make a basic plan on what I wanted each sheet to include.
 
 "Build a Cookie Clicker Game" week 2 assessment
 
@@ -36,7 +36,7 @@ DONE: Use the owned items and their increment bonus to calculate the total incre
 
 I wasn't sure fully what this meant, I assumed it was regarding updating the cookies per second.
 
-I found as I worked through the assignment I came up with new ideas of how I wanted to handle to cookie clicker, for example I initially started with 1 fucntion for each upgrade I decided to see if and how I could use an array to store the cookie values and descriptions etc. With more time I would have looked to use this array in other fuctions.
+I found as I worked through the assignment I came up with new ideas of how I wanted to handle to cookie clicker, for example I initially started with a separate function for each upgrade I decided to see if and how I could use an array to store the cookie values and descriptions etc. With more time I would have looked to use this array in other functions.
 
 https://nicklormanhall.github.io/assessment-week2-cookieclicker/ (live)
 https://github.com/nicklormanhall/assessment-week2-cookieclicker (github repo)
