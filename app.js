@@ -1,15 +1,16 @@
-// STEPS:
-// Step 1: Sets the default values of 0
-// Step 2: If data exist in the local storage it will update the webpage, converts to a JSON
-
+//Sets each of the elements being used
 const cookieBtn = document.getElementById("cookieBtn");
 const mixerBtn = document.getElementById("mixerBtn");
+const mixerCost = document.getElementById("mixerCost");
+const mixerStock = document.getElementById("mixerStock");
 const ovenBtn = document.getElementById("ovenBtn");
 const toolsBtn = document.getElementById("toolsBtn");
 const pressBtn = document.getElementById("pressBtn");
 const factoryBtn = document.getElementById("factoryBtn");
+
 const resetBtn = document.getElementById("resetBtn"); //resets coookes
 
+//Array for the upgrade items
 const upgradeItems = [
   { cost: 10, cps: 1, item: "new mixer" },
   { cost: 100, cps: 10, item: "bigger oven" },
